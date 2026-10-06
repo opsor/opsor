@@ -12,7 +12,7 @@
 
 <h3><img src="https://api.iconify.design/carbon/machine-learning-model.svg?color=white" width="32" align="absmiddle"> ARCHITECTURAL PHILOSOPHY</h3>
 <p>I design and engineer high-performance software ecosystems. My work bridges the gap between complex, data-heavy backend logic and sleek, minimal user interfaces.</p>
-<p>As the industry shifts toward automation, my primary focus is on engineering autonomous systems—crafting intelligent agents that can reason, execute tools, and manage state dynamically. I prioritize raw efficiency, deterministic outcomes in probabilistic models, and zero-latency user experiences. Whether I am building a hardware-accelerated Windows application, orchestrating multi-agent bot networks, or structuring massive voxel environments, the goal remains the same: deliver robust, scalable, and premium software architectures.</p>
+<p>As the industry shifts toward automation, my primary focus is on engineering autonomous systems—crafting intelligent agents that can reason, execute tools, and manage state dynamically. I prioritize raw efficiency, deterministic outcomes in probabilistic models, and zero-latency user experiences. Whether I am building a hardware-accelerated Windows application, orchestrating multi-agent bot networks, or structuring massive voxel environments, the goal remains the same: deliver robust, scalable, and premium software architectures designed for both personal and commercial business applications.</p>
 
 <br>
 
@@ -25,25 +25,26 @@ Designing autonomous frameworks where specialized AI agents plan, execute, and e
   <li><strong>Implementations:</strong> Custom retrieval-augmented generation (RAG) pipelines, dynamic context-window management, and deterministic tool-calling loops.</li>
 </ul>
 
-<p><strong>02. Game-State Automation & Autonomous Networks</strong><br>
-Reverse-engineering real-time game states to orchestrate distributed, highly autonomous bot clusters.</p>
+<p><strong>02. Game-State Automation & The bat- network</strong><br>
+Reverse-engineering real-time Minecraft states to orchestrate distributed, highly autonomous bot clusters for commercial and business purposes.</p>
 <ul>
-  <li><strong>The "Giga Mind" Network:</strong> Engineered a multi-agent autonomous Minecraft bot infrastructure using Node.js, Python, and Mineflayer, fully integrated with custom 3D pathfinding databases.</li>
-  <li><strong>Algorithmic Execution:</strong> Developed tick-perfect, automated PvP logic utilizing complex spatial mechanics, including Mace/Elytra/Wind Charge execution and circle-strafing pathfinding.</li>
+  <li><strong>The bat- network:</strong> Engineered a multi-agent autonomous bot infrastructure using Node.js, Python, and Mineflayer. The system is fully integrated with custom 3D pathfinding databases and multi-agent AI orchestration.</li>
+  <li><strong>Algorithmic Combat Execution:</strong> Developed tick-perfect, automated PvP logic utilizing complex spatial mechanics, including Mace/Elytra/Wind Charge execution, adaptive circle-strafing, and dynamic threat evaluation.</li>
+  <li><strong>Commercial Application:</strong> Built to scale from personal utility to enterprise-grade bot orchestration and commercial server automation.</li>
 </ul>
 
-<p><strong>03. Premium Interface Architecture & Telemetry</strong><br>
+<p><strong>03. Large-Scale Voxel Architecture & Procedural Design</strong><br>
+Bridging software engineering with massive-scale spatial design in Minecraft (v1.21.11+), tailored for high-end commercial deployment.</p>
+<ul>
+  <li><strong>Spatial Engineering:</strong> Designing massive 3000x3000 block medieval and gothic kingdom specifications with immaculate attention to detail and structural scaling.</li>
+  <li><strong>Advanced Tooling:</strong> Utilizing Litematica for precise schematic engineering and Axiom for programmatic terrain generation, custom gradient palettes, and rapid large-scale prototyping.</li>
+</ul>
+
+<p><strong>04. Premium Interface Architecture & Telemetry</strong><br>
 Building data-dense, highly responsive frontends that remove visual noise and highlight critical system telemetry.</p>
 <ul>
-  <li><strong>Web Ecosystem:</strong> React, Next.js, TypeScript, and Tailwind CSS. Engineered the proprietary <code>opsor:MAS</code> dashboard for high-throughput Minecraft account scanning and centralized state management.</li>
-  <li><strong>Desktop Ecosystem:</strong> Electron and C# (WPF) for crafting hardware-accelerated, installable desktop environments with deep OS integration.</li>
-</ul>
-
-<p><strong>04. Large-Scale Voxel Architecture & Procedural Design</strong><br>
-Bridging software engineering with massive-scale spatial design in voxel environments (v1.21.11+).</p>
-<ul>
-  <li><strong>Spatial Engineering:</strong> Designing massive 3000x3000 block medieval and gothic kingdom specifications.</li>
-  <li><strong>Implementations:</strong> Advanced schematic engineering utilizing Litematica and programmatic terrain generation/gradient palettes via Axiom.</li>
+  <li><strong>Web Ecosystem:</strong> React, Next.js, TypeScript, and Tailwind CSS for crafting scalable, component-driven SaaS platforms and data dashboards.</li>
+  <li><strong>Desktop Ecosystem:</strong> Electron and C# (WPF) for crafting hardware-accelerated, installable desktop environments with deep OS integration and minimal memory footprints.</li>
 </ul>
 
 <p><strong>05. Local LLM Pipelines & Bare-Metal Compute</strong><br>
@@ -65,10 +66,10 @@ Moving away from black-box commercial APIs to build private, secure, and highly 
 <br>
 
 <h3><img src="https://api.iconify.design/carbon/finance.svg?color=white" width="32" align="absmiddle"> CURRENT TRAJECTORY & COMMERCIAL OFFERINGS</h3>
-<p>Currently focused on developing proprietary tooling, autonomous gaming infrastructures, and high-performance desktop environments. In the near future, this digital workspace will transition into a commercial hub for premium digital assets. Future offerings will include:</p>
+<p>Currently focused on developing proprietary tooling, autonomous gaming infrastructures, and high-performance desktop environments for both personal and business deployment. In the near future, this digital workspace will transition into a commercial hub for premium digital assets. Future offerings will include:</p>
 <ul>
-  <li><strong>Software Licenses:</strong> Commercial access to the <code>opsor:MAS</code> account management dashboard and proprietary system security scanners.</li>
-  <li><strong>Autonomous Frameworks:</strong> Enterprise-grade bot orchestration networks and custom PvP/pathfinding logic modules for rapid deployment.</li>
-  <li><strong>Premium Schematics:</strong> High-end, large-scale gothic and medieval voxel architecture blueprints (Axiom/Litematica compatible).</li>
+  <li><strong>Autonomous Frameworks:</strong> Enterprise-grade <code>bat- network</code> bot orchestration and custom PvP/pathfinding logic modules for rapid, scalable deployment.</li>
+  <li><strong>Premium Schematics:</strong> High-end, large-scale gothic and medieval voxel architecture blueprints (Axiom/Litematica compatible) mapped for commercial server use.</li>
+  <li><strong>System Telemetry Tools:</strong> Proprietary desktop interfaces and background security/automation triggers built in C# and WPF.</li>
   <li><strong>Consulting & Architecture:</strong> Custom bare-metal LLM integrations, multi-provider AI architectures, and high-frequency network automation.</li>
 </ul>
