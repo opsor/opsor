@@ -10,7 +10,8 @@
 
 <br>
 
-<h3>// ARCHITECTURAL PHILOSOPHY</h3>
+<h3><img src="https://api.iconify.design/ph/cpu-bold.svg?color=white" width="32" align="absmiddle"> ARCHITECTURAL PHILOSOPHY</h3>
+ ARCHITECTURAL PHILOSOPHY</h3>
 <p>I design and engineer high-performance software ecosystems. My work bridges the gap between complex, data-heavy backend logic and sleek, minimal user interfaces.</p>
 
 <p>As the industry shifts toward automation, my primary focus is on engineering autonomous systems—crafting intelligent agents that can reason, execute tools, and manage state dynamically. I prioritize raw efficiency, deterministic outcomes in probabilistic models, and zero-latency user experiences. Whether I am building a hardware-accelerated Windows application or a multi-provider AI network, the goal remains the same: <b>deliver robust, scalable, and premium software architectures.</b></p>
