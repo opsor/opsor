@@ -1,41 +1,100 @@
 <div align="center">
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=00F0FF&center=true&vCenter=true&width=800&height=100&lines=Hi,+I'm+Tu;Building+Intelligent+Systems;Developing+Autonomous+Agents;Crafting+Modern+UIs" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&color=00F0FF&center=true&vCenter=true&width=850&height=90&lines=Greetings%2C+I'm+𝓇𝑜𝓉𝑜;Systems+Architect+%2F%2F+AI+Engineer;Autonomous+Agent+Networks+%26+Multi-Agent+Systems;High-Performance+Client+Architecture;Local+LLM+Pipelines+%26+Hardware+Inference" alt="Typing SVG" />
 </a>
 
-Welcome to my digital workspace. I am Tu, a software developer focused on the intersection of **Artificial Intelligence**, **Automation**, and **Modern UI Architecture**.
+<p align="center">
+  <strong>Autonomous Intelligence</strong> &nbsp;|&nbsp; 
+  <strong>Distributed Systems</strong> &nbsp;|&nbsp; 
+  <strong>Modern Interface Architecture</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/System-Operational-00F0FF?style=flat-square&labelColor=0d1117" alt="Status" />
+  <img src="https://img.shields.io/badge/Focus-AI_%26_Autonomous_Agents-00F0FF?style=flat-square&labelColor=0d1117" alt="Focus" />
+  <img src="https://img.shields.io/badge/Environment-Linux_%2F_Windows-00F0FF?style=flat-square&labelColor=0d1117" alt="Environment" />
+</p>
 
 ---
 
-### Core Focus Areas
-
 </div>
 
-- **AI & Autonomous Systems:** Designing multi-provider AI architectures, autonomous bot networks, and complex pathfinding logic.
-- **Local LLMs:** Exploring self-hosted Large Language Model hardware, optimization, and prompt engineering.
-- **Desktop & Web Development:** Crafting responsive web dashboards and high-performance desktop applications using modern frameworks.
-- **Hardware Prototyping:** Bridging the gap between software and physical environments using microcontrollers.
+### Architectural Philosophy
 
-<br/>
+I design and engineer end-to-end software ecosystems that prioritize raw performance, structural scalability, and algorithmic autonomy. My work centers on orchestrating autonomous agents, engineering custom real-time bot frameworks, self-hosting inference engines on dedicated hardware, and wrapping complex backend workflows into clean, responsive client interfaces.
 
-<div align="center">
+---
+
+### Core Engineering Domains
+
+#### 1. Autonomous Agents & Multi-Provider AI
+* **Agentic Workflows:** Developing distributed multi-agent systems featuring structured task decomposition, tool execution loops, and automated orchestration.
+* **Local Inference Pipelines:** Deploying and benchmarking open-weight Large Language Models on dedicated local workstation hardware, optimizing VRAM allocation and quantization formats (GGUF, AWQ, EXL2).
+* **Context & Retrieval:** Designing custom context-window architectures and retrieval structures using modern vector search patterns and LangChain orchestration.
+
+#### 2. Distributed Networks & Algorithmic Automation
+* **Real-Time Bot Architectures:** Engineering multi-agent autonomous bot clusters with deterministic state evaluation, high-frequency tick loops, and predictive spatial pathfinding logic.
+* **Protocol & Network Reverse Engineering:** Interfacing directly with network packets, event streams, and real-time state machines using Node.js and Python.
+* **Defensive Tooling:** Developing automated system telemetry, security scanners, and background system hooks.
+
+#### 3. Client Systems & Interface Architecture
+* **Modern Desktop Applications:** Building hardware-accelerated desktop environments using C#, WPF, and Electron with minimal memory footprints.
+* **Component-Driven Web Interfaces:** Constructing data-dense analytics dashboards with React, TypeScript, and Tailwind CSS.
+* **Embedded & Hardware Prototyping:** Interfacing microcontrollers (ESP32) with system telemetry, OLED displays, and peripheral buses via clean C++ codebases.
+
+---
 
 ### Technical Arsenal
 
+<div align="center">
+
+#### Languages & Core Runtime
+
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,cs,react,tailwind,nodejs,electron,docker,linux,git&theme=dark" alt="Technical Skills Icons" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,cs,cpp&theme=dark" alt="Languages" />
 </a>
 
 <br/><br/>
 
-### Profile Analytics
+#### Frameworks, Engines & Interface
 
-<a href="https://github.com/opsor">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=opsor&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=react,tailwind,electron,nodejs,nextjs&theme=dark" alt="Frameworks" />
 </a>
-<a href="https://github.com/opsor">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=opsor&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+
+<br/><br/>
+
+#### Infrastructure, Environments & Tooling
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=docker,linux,git,github,windows&theme=dark" alt="Tools" />
 </a>
 
 </div>
+
+---
+
+### System Telemetry & Activity
+
+<div align="center">
+
+<a href="https://github.com/opsor">
+  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=opsor&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Profile Stats" />
+</a>
+<a href="https://github.com/opsor">
+  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=opsor&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/opsor">
+  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=opsor&theme=tokyonight&hide_border=true" alt="Contribution Streak" />
+</a>
+
+---
+
+```ascii
+[0x00] > Execution Loop Active
+[0x01] > Neural Architecture: Online
+[0x02] > All Nodes Synchronized
