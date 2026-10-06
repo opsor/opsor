@@ -1,4 +1,4 @@
-<<div align="center">
+<div align="center">
 𝓇𝑜𝓉𝑜
 Systems Architecture  ·  Artificial Intelligence  ·  Modern Interfaces
 <br />
