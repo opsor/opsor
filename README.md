@@ -75,26 +75,3 @@ I design and engineer end-to-end software ecosystems that prioritize raw perform
 
 ---
 
-### System Telemetry & Activity
-
-<div align="center">
-
-<a href="https://github.com/opsor">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=opsor&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Profile Stats" />
-</a>
-<a href="https://github.com/opsor">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=opsor&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/opsor">
-  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=opsor&theme=tokyonight&hide_border=true" alt="Contribution Streak" />
-</a>
-
----
-
-```ascii
-[0x00] > Execution Loop Active
-[0x01] > Neural Architecture: Online
-[0x02] > All Nodes Synchronized
