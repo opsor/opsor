@@ -10,15 +10,14 @@
 
 <br>
 
-<h3><img src="https://api.iconify.design/ph/cpu-bold.svg?color=white" width="32" align="absmiddle"> ARCHITECTURAL PHILOSOPHY</h3>
- ARCHITECTURAL PHILOSOPHY</h3>
+<h3><img src="https://api.iconify.design/carbon/machine-learning-model.svg?color=white" width="36" align="absmiddle"> ARCHITECTURAL PHILOSOPHY</h3>
 <p>I design and engineer high-performance software ecosystems. My work bridges the gap between complex, data-heavy backend logic and sleek, minimal user interfaces.</p>
 
 <p>As the industry shifts toward automation, my primary focus is on engineering autonomous systems—crafting intelligent agents that can reason, execute tools, and manage state dynamically. I prioritize raw efficiency, deterministic outcomes in probabilistic models, and zero-latency user experiences. Whether I am building a hardware-accelerated Windows application or a multi-provider AI network, the goal remains the same: <b>deliver robust, scalable, and premium software architectures.</b></p>
 
 <br>
 
-<h3>// CORE CAPABILITIES & DOMAINS</h3>
+<h3><img src="https://api.iconify.design/ph/lock-key-bold.svg?color=white" width="36" align="absmiddle"> CORE CAPABILITIES & DOMAINS</h3>
 
 <h4>01. Multi-Agent Systems & AI Orchestration</h4>
 <p>Designing autonomous frameworks where specialized AI agents plan, execute, and evaluate complex tasks without human intervention.</p>
@@ -50,7 +49,7 @@
 
 <br>
 
-<h3>// TECHNICAL STACK</h3>
+<h3><img src="https://api.iconify.design/ph/stack-bold.svg?color=white" width="36" align="absmiddle"> TECHNICAL STACK</h3>
 <p align="left">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=ts,js,python,cs,cpp,react,nextjs,tailwind,electron,nodejs,docker,linux,git,github&theme=dark&perline=14" alt="Tech Stack" />
@@ -59,5 +58,13 @@
 
 <br>
 
-<h3>// CURRENT TRAJECTORY & FUTURE OFFERINGS</h3>
-<p>Currently focused on developing proprietary tools, desktop environments, and AI-driven automation systems. In the near future, this space will serve as the hub for premium digital products, specialized software tools, and autonomous agent frameworks available for integration.</p>
+<h3><img src="https://api.iconify.design/carbon/finance.svg?color=white" width="36" align="absmiddle"> COMMERCIAL TRAJECTORY & PREMIUM OFFERINGS</h3>
+<p>Currently focused on developing proprietary AI toolkits, zero-latency desktop environments, and secure autonomous systems. In the near future, this profile will serve as the primary hub for premium digital products, specialized software architectures, and commercial integrations.</p>
+
+<p><b>Upcoming Monetization & Services:</b></p>
+<ul>
+  <li><b>Proprietary Autonomous Agents:</b> Pre-configured, task-specific AI agents (data synthesis, market analysis, automated infrastructure management) available for commercial licensing.</li>
+  <li><b>High-Performance Desktop Architectures:</b> Turn-key, hardware-accelerated Windows applications designed for power users, algorithmic traders, and enterprise environments.</li>
+  <li><b>Boutique Architectural Consulting:</b> End-to-end systems design for businesses looking to integrate private, local LLMs and automated multi-agent workflows without relying on external, black-box APIs.</li>
+  <li><b>Premium Codebases & Boilerplates:</b> Production-ready infrastructure code, specialized UI components, and secure backend wrappers.</li>
+</ul>
