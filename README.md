@@ -21,16 +21,17 @@ Engineered to run unattended, recover on its own, and ship with the polish of a 
 
 <br />
 
-</div>
 
-<table width="100%">
+<table align="center">
 <tr>
-<td align="center" width="25%"><b>4</b><br /><sub>flagship products<br />built and shipped</sub></td>
-<td align="center" width="25%"><b>184</b><br /><sub>automated tests<br />in a single product</sub></td>
-<td align="center" width="25%"><b>24/7</b><br /><sub>unattended operation<br />by design</sub></td>
-<td align="center" width="25%"><b>Auto</b><br /><sub>self-updating apps<br />no reinstall for new versions</sub></td>
+<td align="center"><b>4</b><br /><sub>flagship products<br />built and shipped</sub></td>
+<td align="center"><b>184</b><br /><sub>automated tests<br />in one product</sub></td>
+<td align="center"><b>24/7</b><br /><sub>unattended<br />by design</sub></td>
+<td align="center"><b>Auto</b><br /><sub>self-updating<br />apps</sub></td>
 </tr>
 </table>
+
+</div>
 
 <br />
 
