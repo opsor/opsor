@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.svg" width="96" alt="opsor logo" />
+
 <br />
 
 # opsor

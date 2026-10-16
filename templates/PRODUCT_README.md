@@ -15,7 +15,7 @@
 
 <div align="center">
 
-<img src="build/icon.png" width="112" alt="{{PRODUCT_NAME}} logo" />
+<img src="docs/brand/logo.svg" width="112" alt="{{PRODUCT_NAME}} logo" />
 
 # {{PRODUCT_NAME}}
 
