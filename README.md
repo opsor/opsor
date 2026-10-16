@@ -146,14 +146,10 @@ One operator console for a whole fleet of combat-capable bots.
 
 <h2 id="stack"><img src="https://api.iconify.design/lucide/layers.svg?color=%234f9fd0" width="20" align="absmiddle" />&nbsp; Stack</h2>
 
-<img src="https://img.shields.io/badge/JavaScript-0f2d45?style=flat-square&logo=javascript&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/Node.js-0f2d45?style=flat-square&logo=nodedotjs&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/React-0f2d45?style=flat-square&logo=react&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/Electron-0f2d45?style=flat-square&logo=electron&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/Vite-0f2d45?style=flat-square&logo=vite&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/Tailwind-0f2d45?style=flat-square&logo=tailwindcss&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/Git-0f2d45?style=flat-square&logo=git&logoColor=8fc9ee" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-0f2d45?style=flat-square&logo=githubactions&logoColor=8fc9ee" />
+<p align="left">
+<img src="https://img.shields.io/badge/JavaScript-0f2d45?style=flat-square&logo=javascript&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/Node.js-0f2d45?style=flat-square&logo=nodedotjs&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/React-0f2d45?style=flat-square&logo=react&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/Electron-0f2d45?style=flat-square&logo=electron&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/Vite-0f2d45?style=flat-square&logo=vite&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/Tailwind-0f2d45?style=flat-square&logo=tailwindcss&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/Git-0f2d45?style=flat-square&logo=git&logoColor=8fc9ee" /> <img src="https://img.shields.io/badge/GitHub%20Actions-0f2d45?style=flat-square&logo=githubactions&logoColor=8fc9ee" />
+
+</p>
 
 <br /><br />
 
