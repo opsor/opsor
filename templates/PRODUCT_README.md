@@ -11,6 +11,7 @@
     green  (AFK):     icon 3fb97f, badge bg 0f3326, logo 8fe3bd
     amber  (Pilot):   icon e0a030, badge bg 3a2a0c, logo f2cf84
     violet (MAS):     icon 8b7cf6, badge bg 221a4a, logo c3bbfb
+    crimson (Bat):    icon e05d6f, badge bg 3d1019, logo f4a3ad
 -->
 
 <div align="center">
