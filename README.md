@@ -26,7 +26,7 @@ Engineered to run unattended, recover on its own, and ship with the polish of a 
 <td align="center" width="25%"><b>3</b><br /><sub>flagship products<br />built and shipped</sub></td>
 <td align="center" width="25%"><b>184</b><br /><sub>automated tests<br />in a single product</sub></td>
 <td align="center" width="25%"><b>24/7</b><br /><sub>unattended operation<br />by design</sub></td>
-<td align="center" width="25%"><b>0</b><br /><sub>passwords stored<br />sign-in on official pages</sub></td>
+<td align="center" width="25%"><b>Auto</b><br /><sub>self-updating apps<br />no reinstall for new versions</sub></td>
 </tr>
 </table>
 
@@ -157,7 +157,7 @@ Yes, source handover can be part of the delivery. We agree on it in the scope.
 <details>
 <summary><b>Is it safe for my accounts?</b></summary>
 <br />
-Tools use official sign-in flows and never store passwords. Some platforms restrict automation, so I'll flag the rules of the platform in question before building.
+Tools use official sign-in flows wherever one exists, and any stored credentials are encrypted. Some platforms restrict automation, so I'll flag the rules of the platform in question before building.
 </details>
 
 <details>
