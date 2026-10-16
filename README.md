@@ -114,18 +114,17 @@ A trading-terminal style desktop app with its own engine.
 **Bat**<br />
 <sub>Fleet command console</sub>
 
-One operator console for a whole fleet of bots.
+One operator console for a whole fleet of combat-capable bots.
 
-- Live 3D map and per-bot cards
-- Orders in English and German
-- Offline simulator, no server needed
-- 30 bots on one engine
+- Combat and PvP: mace, sword, axe and spear styles, sparring and team fights
+- Tactical codes, a commander, orders in English and German
+- Live 3D map, offline simulator, 30 bots on one engine
 
 </td>
 </tr>
 </table>
 
-<sub>Source is private. Live demos and walkthroughs on request.</sub>
+<sub>Source is private. Live demos and walkthroughs on request. Bots are for servers you own or have permission to use them on.</sub>
 
 <br />
 
