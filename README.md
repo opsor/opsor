@@ -23,7 +23,7 @@ Engineered to run unattended, recover on its own, and ship with the polish of a 
 
 <table width="100%">
 <tr>
-<td align="center" width="25%"><b>3</b><br /><sub>flagship products<br />built and shipped</sub></td>
+<td align="center" width="25%"><b>4</b><br /><sub>flagship products<br />built and shipped</sub></td>
 <td align="center" width="25%"><b>184</b><br /><sub>automated tests<br />in a single product</sub></td>
 <td align="center" width="25%"><b>24/7</b><br /><sub>unattended operation<br />by design</sub></td>
 <td align="center" width="25%"><b>Auto</b><br /><sub>self-updating apps<br />no reinstall for new versions</sub></td>
@@ -62,7 +62,7 @@ Most custom software is handed over half-finished: no installer, no error handli
 
 <table width="100%">
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 <img src="https://api.iconify.design/lucide/tractor.svg?color=%234f9fd0" width="28" />
 
@@ -77,7 +77,7 @@ Run any number of accounts from one window and walk away.
 - No passwords stored
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 <img src="https://api.iconify.design/lucide/hammer.svg?color=%234f9fd0" width="28" />
 
@@ -92,7 +92,7 @@ One brain coordinating a whole fleet of bots on a single job.
 - Updates its own code
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 <img src="https://api.iconify.design/lucide/square-terminal.svg?color=%234f9fd0" width="28" />
 
@@ -105,6 +105,21 @@ A trading-terminal style desktop app with its own engine.
 - Encrypted credentials, audit ledger
 - Roles and shared team lists
 - 184 automated tests
+
+</td>
+<td width="25%" valign="top">
+
+<img src="https://api.iconify.design/lucide/radio-tower.svg?color=%234f9fd0" width="28" />
+
+**Bat**<br />
+<sub>Fleet command console</sub>
+
+One operator console for a whole fleet of bots.
+
+- Live 3D map and per-bot cards
+- Orders in English and German
+- Offline simulator, no server needed
+- 30 bots on one engine
 
 </td>
 </tr>
