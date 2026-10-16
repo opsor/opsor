@@ -49,12 +49,32 @@ Most custom software arrives half-finished: no installer, no error handling, no 
 
 <h2 id="services"><img src="https://api.iconify.design/ph/briefcase-bold.svg?color=%234f9fd0" width="24" align="absmiddle" />&nbsp; Services</h2>
 
-| | Service | You receive |
-| :-: | :-- | :-- |
-| <img src="https://api.iconify.design/ph/robot-bold.svg?color=%234f9fd0" width="24" /> | **Automation & bots** | Real-time clients and multi-account managers with safety logic built in |
-| <img src="https://api.iconify.design/ph/app-window-bold.svg?color=%234f9fd0" width="24" /> | **Desktop applications** | Windows app with installer, auto-update and a clean UI |
-| <img src="https://api.iconify.design/ph/graph-bold.svg?color=%234f9fd0" width="24" /> | **Orchestration & backends** | Task queues, worker swarms and APIs that scale |
-| <img src="https://api.iconify.design/ph/bell-ringing-bold.svg?color=%234f9fd0" width="24" /> | **Dashboards & alerts** | Live status, desktop and phone alerts, Discord and Slack webhooks |
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<img src="https://api.iconify.design/ph/robot-bold.svg?color=%234f9fd0" width="28" /><br />
+<b>Automation & bots</b><br />
+<sub>Real-time clients and multi-account managers with safety logic built in.</sub>
+</td>
+<td width="50%" valign="top">
+<img src="https://api.iconify.design/ph/app-window-bold.svg?color=%234f9fd0" width="28" /><br />
+<b>Desktop applications</b><br />
+<sub>Windows app with installer, auto-update and a clean UI.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="https://api.iconify.design/ph/graph-bold.svg?color=%234f9fd0" width="28" /><br />
+<b>Orchestration & backends</b><br />
+<sub>Task queues, worker swarms and APIs that scale.</sub>
+</td>
+<td width="50%" valign="top">
+<img src="https://api.iconify.design/ph/bell-ringing-bold.svg?color=%234f9fd0" width="28" /><br />
+<b>Dashboards & alerts</b><br />
+<sub>Live status, desktop and phone alerts, Discord and Slack webhooks.</sub>
+</td>
+</tr>
+</table>
 
 > **Open to any project**, as long as it is legal and does not break a platform's EULA or terms of service. If it fits, I will build it.
 
