@@ -6,7 +6,11 @@
   2. Replace every {{PLACEHOLDER}}.
   3. Delete any section you don't need.
   4. Pick ONE Lucide icon per section: https://lucide.dev/icons
-  Palette: icons #4f9fd0, badge background #0f2d45, badge logo #8fc9ee
+  Palette: pick ONE per project and find/replace the three values.
+    blue   (profile): icon 4f9fd0, badge bg 0f2d45, logo 8fc9ee
+    green  (AFK):     icon 3fb97f, badge bg 0f3326, logo 8fe3bd
+    amber  (Pilot):   icon e0a030, badge bg 3a2a0c, logo f2cf84
+    violet (MAS):     icon 8b7cf6, badge bg 221a4a, logo c3bbfb
 -->
 
 <div align="center">
