@@ -59,6 +59,8 @@ Most custom software is handed over half-finished: no installer, no error handli
 | <img src="https://api.iconify.design/lucide/network.svg?color=%234f9fd0" width="22" /> | **Orchestration & backends** | Coordinating many workers or accounts | Task queues, worker swarms and APIs that scale |
 | <img src="https://api.iconify.design/lucide/bell-ring.svg?color=%234f9fd0" width="22" /> | **Dashboards & alerts** | Knowing without watching | Live status, desktop and phone alerts, Discord and Slack webhooks |
 
+> **Open to any project**, as long as it is legal and does not break a platform's EULA or terms of service. If it fits, I will build it.
+
 <br />
 
 <h2 id="products"><img src="https://api.iconify.design/lucide/boxes.svg?color=%234f9fd0" width="20" align="absmiddle" />&nbsp; Products I've built</h2>
@@ -158,7 +160,7 @@ One operator console for a whole fleet of combat-capable bots.
 <details>
 <summary><b>What kind of projects do you take on?</b></summary>
 <br />
-Automation tools, bots, orchestration backends and Windows desktop apps. If it should run on its own and be easy to operate, it's a fit.
+Automation tools, bots, orchestration backends and Windows desktop apps, and really any other project, as long as it is legal and does not violate a platform's EULA or terms of service. If it should run on its own and be easy to operate, it's a fit.
 </details>
 
 <details>
