@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" width="120" alt="opsor" />
+<img src="assets/avatar.png" width="120" alt="opsor" />
 
 <br />
 
