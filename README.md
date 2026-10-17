@@ -88,6 +88,7 @@ Most custom software arrives half-finished: no installer, no error handling, no 
 | <img src="assets/logo-pilot.svg" width="40" /> | **Pilot** | Swarm controller | One brain and a lease-based task queue that builds a schematic across many bots, layer by layer |
 | <img src="assets/logo-mas.svg" width="40" /> | **MAS** | Team operations terminal | Millisecond scheduling, encrypted credentials, tamper-evident audit ledger, 184 tests |
 | <img src="assets/logo-bat.svg" width="40" /> | **Bat** | Fleet command console | Combat and PvP, tactical codes, a commander bot, live 3D map and an offline simulator |
+| <img src="https://api.iconify.design/ph/sparkle-bold.svg?color=%234f9fd0" width="32" /> | **Coming soon** | New project | In development. Details to follow |
 
 <sub>Source is private. Live demos and walkthroughs on request. Bots are for servers you own or have permission to use them on.</sub>
 
