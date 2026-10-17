@@ -84,10 +84,10 @@ Most custom software arrives half-finished: no installer, no error handling, no 
 
 | | Product | Type | Highlights |
 | :-: | :-- | :-- | :-- |
-| <img src="https://api.iconify.design/ph/plant-bold.svg?color=%234f9fd0" width="24" /> | **AFK** | Multi-account automation | Any number of accounts from one window. Self-care, recovery, safe-logout, instant alerts |
-| <img src="https://api.iconify.design/ph/hammer-bold.svg?color=%234f9fd0" width="24" /> | **Pilot** | Swarm controller | One brain, lease-based task queue, builds a schematic across many bots |
-| <img src="https://api.iconify.design/ph/terminal-window-bold.svg?color=%234f9fd0" width="24" /> | **MAS** | Team operations terminal | Millisecond scheduling, encrypted credentials, audit ledger, 184 tests |
-| <img src="https://api.iconify.design/ph/broadcast-bold.svg?color=%234f9fd0" width="24" /> | **Bat** | Fleet command console | Combat and PvP, tactical codes, commander bot, live 3D map, offline simulator |
+| <img src="assets/logo-afk.svg" width="40" /> | **AFK** | Multi-account automation | Run any number of accounts from one window. Self-care, death recovery, safe-logout and instant alerts |
+| <img src="assets/logo-pilot.svg" width="40" /> | **Pilot** | Swarm controller | One brain and a lease-based task queue that builds a schematic across many bots, layer by layer |
+| <img src="assets/logo-mas.svg" width="40" /> | **MAS** | Team operations terminal | Millisecond scheduling, encrypted credentials, tamper-evident audit ledger, 184 tests |
+| <img src="assets/logo-bat.svg" width="40" /> | **Bat** | Fleet command console | Combat and PvP, tactical codes, a commander bot, live 3D map and an offline simulator |
 
 <sub>Source is private. Live demos and walkthroughs on request. Bots are for servers you own or have permission to use them on.</sub>
 
