@@ -1,0 +1,8 @@
+{
+  "name": "readme-art",
+  "private": true,
+  "type": "module",
+  "description": "Renders hero banners and flow diagrams for the opsor READMEs",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": { "@resvg/resvg-js": "^2.6.2" }
+}
