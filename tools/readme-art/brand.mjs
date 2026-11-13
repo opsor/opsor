@@ -10,6 +10,8 @@ const REPOS = {
   pilot: ROOT + 'Documents/GitHub/pilot',
   mas: ROOT + 'Desktop/mas',
   bat: ROOT + 'Documents/GitHub/bat',
+  add: ROOT + 'Documents/GitHub/add',
+  trade: ROOT + 'Documents/GitHub/trade',
 }
 
 // Marks are drawn in a 64 x 64 box, white, like AFK's logo.svg.
@@ -35,6 +37,18 @@ const MARKS = {
   bat: {
     // a geometric bat with two eye cut-outs
     inner: `<path fill-rule="evenodd" fill="#fff" transform="translate(32 32) scale(0.32) translate(-128 -116)" d="M128 100 L137 78 L144 98 C172 90 204 92 226 108 L192 126 L172 146 L150 132 L128 154 L106 132 L84 146 L64 126 L30 108 C52 92 84 90 112 98 L119 78 Z M121 113 m-3.6 0 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 M135 113 m-3.6 0 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0"/>`,
+    shift: [0, 0],
+  },
+  add: {
+    // four slots: three components plugged in, one waiting
+    inner: `<g fill="#fff"><rect x="11" y="11" width="17" height="17" rx="4.5"/><rect x="36" y="11" width="17" height="17" rx="4.5"/><rect x="11" y="36" width="17" height="17" rx="4.5"/></g>
+  <rect x="37.2" y="37.2" width="14.6" height="14.6" rx="4" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="3.6 3"/>`,
+    shift: [0, 0],
+  },
+  trade: {
+    // grid levels crossed by a price line
+    inner: `<g stroke="#fff" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round"><line x1="9" y1="17" x2="55" y2="17"/><line x1="9" y1="32" x2="55" y2="32"/><line x1="9" y1="47" x2="55" y2="47"/></g>
+  <polyline points="10,43 21,22 33,38 45,16 55,27" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>`,
     shift: [0, 0],
   },
   opsor: {
@@ -101,11 +115,13 @@ for (const [key, m] of Object.entries(MARKS)) {
   if (key === 'opsor') {
     fs.writeFileSync(path.join(brand, 'mark.svg'), icon)
   } else {
-    fs.writeFileSync(path.join(brand, 'logo.svg'), markSvg(m))
+    fs.writeFileSync(path.join(brand, 'logo.svg'), key === 'add' || key === 'trade' ? icon : markSvg(m)) // their icon scripts render logo.svg
     fs.writeFileSync(path.join(brand, 'icon.svg'), icon)
-    const assets = path.join(repo, 'desktop/assets')
-    fs.writeFileSync(path.join(assets, 'icon.png'), render(icon, 256))
-    fs.writeFileSync(path.join(assets, 'icon.ico'), ico(icon))
+    if (key !== 'add' && key !== 'trade') {
+      const assets = path.join(repo, 'desktop/assets')
+      fs.writeFileSync(path.join(assets, 'icon.png'), render(icon, 256))
+      fs.writeFileSync(path.join(assets, 'icon.ico'), ico(icon))
+    }
     // copies for the profile page
     fs.writeFileSync(path.join(REPOS.opsor, `assets/logo-${key}.svg`), icon)
   }

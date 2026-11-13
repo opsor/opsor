@@ -9,6 +9,8 @@ const REPOS = {
   pilot: ROOT + 'Documents/GitHub/pilot',
   mas: ROOT + 'Desktop/mas',
   bat: ROOT + 'Documents/GitHub/bat',
+  add: ROOT + 'Documents/GitHub/add',
+  trade: ROOT + 'Documents/GitHub/trade',
 }
 
 const T = {
@@ -17,6 +19,8 @@ const T = {
   pilot: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
   mas: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
   bat: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  add: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  trade: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
 }
 
 const icon = (t, name, size = 28) => `<img src="https://api.iconify.design/ph/${name}-bold.svg?color=%23${t.c}" width="${size}" />`
@@ -32,6 +36,10 @@ function cards(t, items, cols = 3) {
     rows.push(`<tr>\n${tds.join('\n')}\n</tr>`)
   }
   return `<table width="100%">\n${rows.join('\n')}\n</table>`
+}
+
+function featureTable(t, rows) {
+  return '| | Feature | What it does |\n| :-: | :-- | :-- |\n' + rows.map(([ic, n, d]) => `| ${icon(t, ic, 24)} | **${n}** | ${d} |`).join('\n')
 }
 
 function stats(items) {
@@ -74,11 +82,11 @@ ${h2(t, 'diamond', c.whyTitle, 'why')}
 
 ${c.why}
 
-<br />
+${c.pillars ? cards(t, c.pillars, 3) + '\n\n' : ''}<br />
 
 ${h2(t, 'rocket-launch', 'Features', 'features')}
 
-${cards(t, c.features)}
+${c.featureTable ? featureTable(t, c.featureTable) : cards(t, c.features)}
 
 <br />
 
@@ -264,9 +272,94 @@ ${read('afk-screen.md')}`,
     ],
     footer: 'Bat is an independent project, not affiliated with Mojang or Microsoft. Private and unlicensed.',
   },
+  add: {
+    alt: 'add: plug it together, ship it, sell it',
+    badges: [['WINDOWS', '10 | 11', 'windows'], ['MINECRAFT JAVA', '1.8 TO 1.21.11'], ['TESTS', '151 PASSING']],
+    nav: [['Why add', '#why'], ['Features', '#features'], ['How it works', '#how-it-works'], ['Quick start', '#quick-start'], ['Security', '#security'], ['Guide', 'docs/GUIDE.md'], ['Components', 'docs/PLUGINS.md']],
+    stats: [['16', 'PvP parts in one component'], ['151', 'tests passing'], ['1.8 to 1.21', 'Minecraft versions'], ['Offline', 'licence checks']],
+    whyTitle: 'Why add',
+    why: 'Most bot tools are one program doing one job. add keeps the bot and its job apart: the base connects any number of accounts and keeps them online, and every job is a component you switch on. Pick the components, give the bundle a name, a colour and an icon, press a button, and you have an <code>.exe</code> your buyers can run with their own bots.',
+    pillars: [
+      ['puzzle-piece', 'Plug together', 'One folder per ability. Its settings become a form on their own.'],
+      ['hammer', 'Build and sell', 'A branded .exe with your name, colour, icon and licence check.'],
+      ['broadcast', 'Stay in reach', 'See every copy that is online, help it and update it from the Studio.'],
+    ],
+    featureTable: [
+      ['puzzle-piece', 'Components', 'One ability each: a farm, a fighting style, auto-reconnect. Plain JavaScript on a ready toolkit.'],
+      ['package', 'Packages', 'Components already plugged together and set up. One click gives a bot its whole job.'],
+      ['swords', 'PvP in one component', 'Sixteen parts you switch on or off, from melee and totems to crystals, mace and team play.'],
+      ['map-pin', 'Places, three ways', 'Type a spot, take it from the bot, or stand there and type <code>!here</code>. Empty chests are found by the bot.'],
+      ['users-three', 'Groups and bulk', 'Start, stop and deploy a package to a whole group. A proxy per bot if you want one.'],
+      ['key', 'Licences', 'Keys per buyer with a duration and a bot limit. Checked offline, blocked in one click.'],
+      ['eye', 'Inventory and map', 'Every slot with durability, and a live top-down map with players, mobs and your other bots.'],
+      ['bell-ringing', 'Alerts and chat', 'Discord and phone alerts when a bot dies, is kicked or needs you, and the game chat in a Discord channel, both ways.'],
+      ['clock', 'Schedules and join commands', 'Bots online in time windows, <code>/login</code> and <code>/server</code> lines sent after joining, saved server profiles.'],
+      ['chart-bar', 'Stats', 'Uptime, joins, deaths and what components count (kills, items stored), per bot and per day.'],
+      ['storefront', 'Sell with insight', 'Sales and expiring keys at a glance, trial keys, ready-to-send key messages, stable and beta update channels, customer notes.'],
+      ['lightning', 'Quick to drive', '<code>Ctrl+K</code> command palette, bulk import with a proxy checker, saved places, a light theme, one-file backup and restore.'],
+      ['code', 'Quick to build in', 'Starter templates, auto-reload on save and an error console, and an Anti-AFK component.'],
+    ],
+    afterFeatures: [{
+      icon: 'monitor', title: 'The Studio', id: 'screens',
+      body: `<table width="100%">
+<tr>
+<td width="50%" valign="top"><img src="docs/images/studio-product.png" alt="The Studio: a product with its brand, version, colour, icon and edition switches" width="100%" /><br /><sub>Products: name, colour, icon, version and edition, then build.</sub></td>
+<td width="50%" valign="top"><img src="docs/images/bot-components.png" alt="A bot's components, switched on and set up from forms" width="100%" /><br /><sub>Components: switched on per bot, each with its own settings form.</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="docs/images/studio-bots.png" alt="The Studio's bot list" width="100%" /><br /><sub>Bots: every account in one place.</sub></td>
+<td width="50%" valign="top"><img src="docs/images/product-licence.png" alt="A product's licence screen" width="100%" /><br /><sub>Licence screen of a built product.</sub></td>
+</tr>
+</table>`,
+    }],
+    flowAlt: 'Compose, package, build, sell',
+    quick: ['npm install', 'npm run studio        # the Studio, from source', 'npm test              # the test suite', 'npm run dist:studio   # build the Studio installer'],
+    security: ['**No passwords.** Microsoft sign-in is by code at microsoft.com/link.', '**Keys that cannot be forged.** Licences are signed by your Studio and checked on the buyer’s computer.', '**Commands only you can give.** Everything sent to a product is signed and used once, and what products report back is encrypted.', '**Local data.** Bots, sign-ins and settings stay in <code>%APPDATA%</code>, one folder per product.', '**Honest about remote access.** A product built with remote access tells its buyer so in Settings.', '**Responsible use.** Run bots only on a server that is yours, or whose owner has agreed to them.'],
+    requirements: [['System', 'Windows 10 or 11'], ['You need', 'A Minecraft: Java Edition account per bot, or a server in offline mode'], ['To get the Studio', 'Node.js 20 or newer, then <code>npm install</code> and <code>npm run dist:studio</code> once. The installer it makes needs neither afterwards.'], ['Optional', 'A private Discord server for remote access and alerts']],
+    docsText: 'From first start to your first sale, the PvP parts, the security model and what is tested are in the Guide. Writing your own component is in Components.',
+    docs: [['READ THE GUIDE', 'docs/GUIDE.md', 'readthedocs'], ['COMPONENTS', 'docs/PLUGINS.md', 'puzzle'], ['EXTENDING', 'docs/EXTENDING.md', 'bookstack']],
+    faq: [],
+    footer: 'add is an independent project, not affiliated with Mojang or Microsoft. Private and unlicensed.',
+  },
+  trade: {
+    alt: 'trade: set the range, let the bots trade it',
+    badges: [['WINDOWS', '10 | 11', 'windows'], ['MODE', 'PAPER BY DEFAULT'], ['TESTS', '399 PASSING']],
+    nav: [['Why trade', '#why'], ['Features', '#features'], ['How it works', '#how-it-works'], ['Quick start', '#quick-start'], ['Security', '#security'], ['Guide', 'docs/GUIDE.md'], ['Architecture', 'docs/ARCHITECTURE.md']],
+    stats: [['399', 'tests passing'], ['Paper', 'by default'], ['3', 'switches before live'], ['Exact', 'decimal money']],
+    whyTitle: 'Why trade',
+    why: 'A bot that looks good on paper often loses once fees and slippage come in. trade runs every bot against live prices with a paper wallet that pays what a real one would: maker and taker fees, the spread, and a price that slips the bigger the order. Watch it for as long as you like, and go live only when the numbers still hold.',
+    pillars: [
+      ['chart-line-up', 'Live prices', 'Binance, Kraken, OKX, Coinbase and the rest of ccxt, streamed as they move.'],
+      ['wallet', 'Honest paper money', 'Fees, spread and slippage on every fill, counted to the last decimal.'],
+      ['monitor', 'Every move on screen', 'Orders, fills and equity land in the dashboard as they happen.'],
+    ],
+    featureTable: [
+      ['grid-four', 'Spot grid', 'A ladder of buy and sell orders across a price range. Every dip bought and sold back up banks the gap.'],
+      ['stairs', 'DCA with safety orders', 'Buys in, buys more as the price falls, and sells everything at a set profit over the average price.'],
+      ['waves', 'Adaptive grid and trend', 'A grid that sizes itself and steps aside in downtrends, and a trend follower with a trailing stop.'],
+      ['flask', 'Backtester', 'A year of real prices through the real bots in seconds, every market and strategy side by side.'],
+      ['scales', 'Paper wallet per bot', 'Each bot trades its own balance, so one bot’s losses never hide in another’s wins.'],
+      ['drop-half-bottom', 'Real slippage', 'Market orders cross the spread and pay a cost that grows with order size. Every fill records what it slipped.'],
+      ['calculator', 'Exact money', 'Prices, amounts and balances in exact decimals, rounded the way the exchange rounds them.'],
+      ['chart-bar', 'Charts that keep up', 'Candles and volume, each bot’s fills as markers, its open orders as lines, and an equity curve.'],
+      ['sliders-horizontal', 'Set up in a form', 'Pick a strategy and the form fills itself in around the current price.'],
+      ['floppy-disk', 'Survives a restart', 'Bots, orders, fills and wallets are saved. A bot that was running comes back stopped.'],
+      ['buildings', 'US stocks on paper', 'SPY, AAPL, NVDA and more on real prices, no broker needed. Crypto and stocks in one dashboard.'],
+      ['wifi-slash', 'Works offline', 'A built-in market that moves like a real one, for building and testing without an exchange.'],
+      ['lightning', 'Live when you mean it', 'Real orders only once you switch it on in three places. Until then nothing leaves your PC.'],
+    ],
+    flowAlt: 'Pick, paper trade, watch, go live',
+    quick: ['powershell -ExecutionPolicy Bypass -File scripts/setup.ps1   # once', 'powershell -ExecutionPolicy Bypass -File scripts/dev.ps1 -Synthetic   # built-in market, no exchange needed', 'powershell -ExecutionPolicy Bypass -File scripts/test.ps1'],
+    security: ['**Paper first.** It starts in paper mode and places no real order until you set live mode, a written confirmation and API keys.', '**Keys stay put.** Exchange keys are read from <code>.env</code> on your computer, never logged and never sent to the browser.', '**Local interface.** The API listens on this computer only, and a web page from another site cannot open its live feed.', '**Local data.** Bots, orders, fills and wallets stay in <code>backend/data</code> on your computer.', '**Not financial advice.** Paper results flatter a strategy. What you trade with real money is your own decision and your own risk.'],
+    requirements: [['System', 'Windows 10 or 11. macOS and Linux work through the <code>.sh</code> scripts.'], ['You need', 'Python 3.12 or newer and Node.js 20 or newer, then <code>scripts\\setup.ps1</code> once'], ['Optional', 'Exchange API keys that can trade but not withdraw, only for live mode']],
+    docsText: 'First start, both strategies, every setting, what is tested and the FAQ are in the Guide. The API, the live feed and the precision rules are in Architecture.',
+    docs: [['READ THE GUIDE', 'docs/GUIDE.md', 'readthedocs'], ['ARCHITECTURE', 'docs/ARCHITECTURE.md', 'bookstack'], ['SECURITY', 'SECURITY.md', 'shield']],
+    faq: [],
+    footer: 'trade is an independent project, not affiliated with any exchange. Not financial advice. Private and unlicensed.',
+  },
 }
 
-for (const key of ['afk', 'pilot', 'mas', 'bat']) {
+for (const key of ['afk', 'pilot', 'mas', 'bat', 'add', 'trade']) {
   fs.writeFileSync(REPOS[key] + '/README.md', project(key, { ...CFG[key], whyTitle: CFG[key].whyTitle }))
   console.log('README', key)
 }
@@ -291,7 +384,7 @@ for (const key of ['afk', 'pilot', 'mas', 'bat']) {
 
 </div>
 
-${stats([['4', 'products shipped'], ['184', 'automated tests in one product'], ['24/7', 'unattended by design'], ['Auto', 'updating desktop apps']])}
+${stats([['6', 'products built'], ['184', 'automated tests in one product'], ['24/7', 'unattended by design'], ['Auto', 'updating desktop apps']])}
 
 <br />
 
@@ -329,7 +422,8 @@ ${h2(t, 'cube', 'Products', 'products')}
 | <img src="assets/logo-pilot.svg" width="44" /> | **Pilot** | Swarm controller | One brain and a lease-based task queue that builds a schematic across many bots |
 | <img src="assets/logo-mas.svg" width="44" /> | **MAS** | Team operations terminal | Millisecond scheduling, encrypted credentials, tamper-evident audit ledger, 184 tests |
 | <img src="assets/logo-bat.svg" width="44" /> | **Bat** | Fleet command console | Combat and PvP, tactical codes, a commander bot, live 3D map and an offline simulator |
-| ${icon(t, 'sparkle', 32)} | **Coming soon** | New project | In development. Details to follow |
+| <img src="assets/logo-add.svg" width="44" /> | **add** | Bot platform and Studio | Plug components together, build branded licensed Windows apps, manage every copy |
+| <img src="assets/logo-trade.svg" width="44" /> | **trade** | Trading bot platform | Grid and DCA bots on live prices, paper wallet with real fees, strict risk controls |
 
 <sub>Source is private. Live demos and walkthroughs on request. Bots are for servers you own or have permission to use them on.</sub>
 

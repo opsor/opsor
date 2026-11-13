@@ -17,7 +17,7 @@
 
 <table width="100%">
 <tr>
-<td align="center" width="25%"><h2>4</h2><sub>products shipped</sub></td>
+<td align="center" width="25%"><h2>6</h2><sub>products built</sub></td>
 <td align="center" width="25%"><h2>184</h2><sub>automated tests in one product</sub></td>
 <td align="center" width="25%"><h2>24/7</h2><sub>unattended by design</sub></td>
 <td align="center" width="25%"><h2>Auto</h2><sub>updating desktop apps</sub></td>
@@ -98,7 +98,8 @@ Most custom software arrives half-finished: no installer, no error handling, no 
 | <img src="assets/logo-pilot.svg" width="44" /> | **Pilot** | Swarm controller | One brain and a lease-based task queue that builds a schematic across many bots |
 | <img src="assets/logo-mas.svg" width="44" /> | **MAS** | Team operations terminal | Millisecond scheduling, encrypted credentials, tamper-evident audit ledger, 184 tests |
 | <img src="assets/logo-bat.svg" width="44" /> | **Bat** | Fleet command console | Combat and PvP, tactical codes, a commander bot, live 3D map and an offline simulator |
-| <img src="https://api.iconify.design/ph/sparkle-bold.svg?color=%23a1a1aa" width="32" /> | **Coming soon** | New project | In development. Details to follow |
+| <img src="assets/logo-add.svg" width="44" /> | **add** | Bot platform and Studio | Plug components together, build branded licensed Windows apps, manage every copy |
+| <img src="assets/logo-trade.svg" width="44" /> | **trade** | Trading bot platform | Grid and DCA bots on live prices, paper wallet with real fees, strict risk controls |
 
 <sub>Source is private. Live demos and walkthroughs on request. Bots are for servers you own or have permission to use them on.</sub>
 

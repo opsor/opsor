@@ -11,6 +11,8 @@ const REPOS = {
   pilot: ROOT + 'Documents/GitHub/pilot',
   mas: ROOT + 'Desktop/mas',
   bat: ROOT + 'Documents/GitHub/bat',
+  add: ROOT + 'Documents/GitHub/add',
+  trade: ROOT + 'Documents/GitHub/trade',
 }
 
 const FONT = "Segoe UI, Inter, Arial, sans-serif"
@@ -24,6 +26,8 @@ const THEMES = {
   pilot: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
   mas: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
   bat: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
+  add: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
+  trade: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
 }
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -94,6 +98,54 @@ function artAfk(t) {
     ${panel('shotA', 'home.png', 850, 40, 380, 835 / 1424, 0.9)}
     <rect x="684" y="136" width="532" height="292" rx="20" fill="#000" opacity="0.6"/>
     ${panel('shotB', 'monitor.png', 700, 148, 500, 1015 / 1904, 1)}
+  </g>`
+}
+
+function artAdd(t) {
+  const DIR = REPOS.add + '/docs/images/'
+  const img = (f) => fs.readFileSync(DIR + f).toString('base64')
+  const panel = (id, file, x, y, w, op) => {
+    const h = Math.round(w * 0.625)
+    return `<clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14"/></clipPath>
+    <image x="${x}" y="${y}" width="${w}" height="${h}" clip-path="url(#${id})" opacity="${op}" preserveAspectRatio="none" href="data:image/png;base64,${img(file)}"/>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="none" stroke="#3a3a3f" stroke-width="1.5"/>`
+  }
+  return `<g>
+    ${panel('addA', 'bot-components.png', 850, 40, 380, 0.9)}
+    <rect x="684" y="136" width="532" height="292" rx="20" fill="#000" opacity="0.6"/>
+    ${panel('addB', 'studio-product.png', 700, 148, 500, 1)}
+  </g>`
+}
+
+function artTrade(t) {
+  const px = 752, pw = 392, top = 96, ph = 200
+  const pts = Array.from({ length: 44 }, (_, i) => {
+    const v = 0.5 + 0.28 * Math.sin(i / 3.1) + 0.16 * Math.sin(i / 1.3 + 1) + 0.06 * Math.cos(i / 0.9)
+    return [px + (i / 43) * pw, top + ph - Math.max(0.04, Math.min(0.96, v)) * ph]
+  })
+  const line = pts.map(([x, y]) => x.toFixed(1) + ',' + y.toFixed(1)).join(' ')
+  const levels = [0.16, 0.3, 0.44, 0.58, 0.72, 0.86].map((f) => top + ph * f)
+  const grid = levels.map((y, i) => `<line x1="${px}" y1="${y.toFixed(1)}" x2="${px + 444}" y2="${y.toFixed(1)}" stroke="#3f3f46" stroke-dasharray="4 5"/><text x="${px + 444}" y="${(y - 4).toFixed(1)}" text-anchor="end" font-family="${MONO}" font-size="10" fill="#6a6a6a">${(64200 - i * 450).toLocaleString('en-US')}</text>`).join('')
+  const marks = []
+  for (let i = 2; i < pts.length - 2; i++) {
+    const [x, y] = pts[i]
+    if (y > pts[i - 1][1] && y > pts[i + 1][1] && y > pts[i - 2][1] && y > pts[i + 2][1]) marks.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5.5" fill="#fafafa"/>`)
+    if (y < pts[i - 1][1] && y < pts[i + 1][1] && y < pts[i - 2][1] && y < pts[i + 2][1]) marks.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5.5" fill="#000" stroke="#fafafa" stroke-width="2"/>`)
+  }
+  const stat = (x, k, v) => `<text x="${x}" y="338" font-family="${MONO}" font-size="11" letter-spacing="1.2" fill="#6a6a6a">${k}</text><text x="${x}" y="372" font-family="${FONT}" font-size="24" font-weight="700" fill="#fff">${v}</text>`
+  return `<g>
+    <rect x="724" y="34" width="500" height="372" rx="20" fill="#0a0a0a" stroke="#262626"/>
+    <line x1="724" y1="78" x2="1224" y2="78" stroke="#1a1a1a"/>
+    <text x="752" y="62" font-family="${MONO}" font-size="14" fill="#8c8c8c">trade · BTC/USDT grid bot</text>
+    <rect x="1128" y="46" width="76" height="24" rx="12" fill="${t.dark}" stroke="${t.accent}" stroke-opacity="0.6"/>
+    <text x="1166" y="62" text-anchor="middle" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1" fill="${t.light}">PAPER</text>
+    ${grid}
+    <polyline points="${line}" fill="none" stroke="#e4e4e7" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    ${marks.join('')}
+    <line x1="740" y1="312" x2="1208" y2="312" stroke="#1a1a1a"/>
+    ${stat(752, 'PAPER BALANCE', '10,412.60')}
+    ${stat(920, 'FEES PAID', '12.40')}
+    ${stat(1060, 'FILLS', '38')}
   </g>`
 }
 
@@ -183,30 +235,35 @@ function artOpsor(t) {
   const cy = 220
   const avatar = fs.readFileSync(REPOS.opsor + '/assets/avatar.jpg').toString('base64')
   const orbit = [
-    { a: -135, f: 'afk', n: 'AFK' },
-    { a: -45, f: 'pilot', n: 'PILOT' },
-    { a: 45, f: 'mas', n: 'MAS' },
-    { a: 135, f: 'bat', n: 'BAT' },
+    { a: -150, f: 'afk', n: 'AFK' },
+    { a: -90, f: 'pilot', n: 'PILOT' },
+    { a: -30, f: 'mas', n: 'MAS' },
+    { a: 30, f: 'bat', n: 'BAT' },
+    { a: 90, f: 'add', n: 'ADD' },
+    { a: 150, f: 'trade', n: 'TRADE' },
   ]
-  const R = 176
+  const RX = 205
+  const RY = 158
   const sat = orbit
     .map(({ a, f, n }) => {
       const r = (a * Math.PI) / 180
-      const x = cx + R * Math.cos(r)
-      const y = cy + R * Math.sin(r)
+      const x = cx + RX * Math.cos(r)
+      const y = cy + RY * Math.sin(r)
       const file = REPOS.opsor + '/assets/logo-' + f + '.svg'
-      return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${t.accent}" stroke-opacity="0.18"/>
-      ${logoAt(file, x - 40, y - 40, 80)}
-      <text x="${x.toFixed(1)}" y="${(y + (y > cy ? 62 : -50)).toFixed(1)}" text-anchor="middle" font-family="${MONO}" font-size="12" letter-spacing="1.4" fill="#6a6a6a">${n}</text>`
+      const side = Math.abs(a) === 90
+      const lx = side ? x + 50 : x
+      const ly = side ? y + 4 : y + (y > cy ? 60 : -50)
+      return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#ffffff" stroke-opacity="0.12"/>
+      ${logoAt(file, x - 36, y - 36, 72)}
+      <text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${side ? 'start' : 'middle'}" font-family="${MONO}" font-size="12" letter-spacing="1.4" fill="#6a6a6a">${n}</text>`
     })
     .join('')
   return `<g>
-    <circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="#242424" stroke-dasharray="3 7"/>
-    <circle cx="${cx}" cy="${cy}" r="${R + 34}" fill="none" stroke="#181818"/>
-    <circle cx="${cx}" cy="${cy}" r="126" fill="none" stroke="${t.accent}" stroke-opacity="0.35" stroke-width="2"/>
+    <ellipse cx="${cx}" cy="${cy}" rx="${RX}" ry="${RY}" fill="none" stroke="#242424" stroke-dasharray="3 7"/>
+    <circle cx="${cx}" cy="${cy}" r="108" fill="none" stroke="${t.accent}" stroke-opacity="0.35" stroke-width="2"/>
     ${sat}
-    <clipPath id="av"><circle cx="${cx}" cy="${cy}" r="118"/></clipPath>
-    <image x="${cx - 118}" y="${cy - 118}" width="236" height="236" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,${avatar}"/>
+    <clipPath id="av"><circle cx="${cx}" cy="${cy}" r="100"/></clipPath>
+    <image x="${cx - 100}" y="${cy - 100}" width="200" height="200" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,${avatar}"/>
   </g>`
 }
 
@@ -280,17 +337,35 @@ const heroes = {
     logo: REPOS.bat + '/docs/brand/icon.svg',
     noRing: true,
   }, artBat(THEMES.bat), 1000),
+  add: heroFrame(THEMES.add, {
+    title: 'add',
+    tagline: ['Plug it together.', 'Ship it. Sell it.'],
+    sub: ['The Minecraft bot platform: components,', 'packages and branded, licensed apps.'],
+    pillItems: ['WINDOWS 10 | 11', 'MC JAVA 1.8 TO 1.21', '151 TESTS'],
+    logo: REPOS.add + '/docs/brand/icon.svg',
+    noRing: true,
+  }, artAdd(THEMES.add), 1000),
+  trade: heroFrame(THEMES.trade, {
+    title: 'trade',
+    tagline: ['Set the range.', 'Let the bots trade it.'],
+    sub: ['Grid and DCA bots on live prices, with', 'a paper wallet that pays real fees.'],
+    pillItems: ['WINDOWS 10 | 11', 'PAPER BY DEFAULT', '399 TESTS'],
+    logo: REPOS.trade + '/docs/brand/icon.svg',
+    noRing: true,
+  }, artTrade(THEMES.trade), 980),
   opsor: heroFrame(THEMES.opsor, {
     title: 'opsor',
     tagline: ['Software that works', 'while you don’t.'],
     sub: ['Quiet, precise automation.', 'Built to run, built to last.'],
-    pillItems: ['OPEN FOR COMMISSIONS', '4 PRODUCTS SHIPPED'],
+    pillItems: ['OPEN FOR COMMISSIONS', '6 PRODUCTS BUILT'],
     logo: REPOS.opsor + '/assets/mark.svg',
     noRing: true,
   }, artOpsor(THEMES.opsor), 986),
 }
 
 const flows = {
+  add: [['Compose', 'Pick components, one folder', 'per ability'], ['Package', 'Plug them together, set up,', 'name and colour'], ['Build', 'One click makes a branded,', 'licensed .exe'], ['Sell', 'Keys per buyer, sales, updates,', 'every copy in reach']],
+  trade: [['Pick', 'A strategy and range, filled in', 'around the live price'], ['Paper trade', 'Fees, spread and slippage', 'on every fill'], ['Watch', 'Orders, fills and equity', 'as they happen'], ['Go live', 'Only after three explicit', 'switches, keys stay local']],
   afk: [['Sign in', 'Microsoft one-time code,', 'no password stored'], ['Run', 'On your PC, or 24/7', 'on a Raspberry Pi'], ['Watch', 'Home, monitor mode and', 'a page on your phone'], ['Alert', 'Urgent to low, never', 'with coordinates']],
   pilot: [['Schematic', 'Drop a .litematic,', 'set its origin'], ['Brain', 'Task queue, leases,', 'sectors per bot'], ['Swarm', 'Bots build, restock', 'and repair together'], ['Seal', 'Every layer read back', 'before the next opens']],
   mas: [['Watch', 'Targets, countdowns', 'and auto-queue rules'], ['Arm', 'NTP-corrected timing,', 'explicit confirmation'], ['Execute', 'Scheduled to the', 'millisecond, per account'], ['Record', 'Results, profit and loss,', 'hash-chained audit']],
