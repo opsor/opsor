@@ -1,6 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img">
-  <circle cx="128" cy="128" r="120" fill="#000"/>
-  <circle cx="128" cy="128" r="62" fill="none" stroke="#4f9fd0" stroke-width="12"/>
-  <circle cx="128" cy="128" r="24" fill="#8fc9ee"/>
-  <circle cx="172" cy="84" r="14" fill="#8fc9ee" stroke="#000" stroke-width="7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <!-- app icon: the white opsor mark on a dark tile, same construction as AFK -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1c1f"/>
+      <stop offset="1" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#tile)"/>
+  <rect x="9" y="9" width="238" height="238" rx="55" stroke="url(#edge)" stroke-width="2"/>
+  <g transform="translate(48 48) scale(2.5)">
+    <circle cx="32" cy="32" r="15.5" fill="none" stroke="#fff" stroke-width="3.6"/>
+  <circle cx="32" cy="32" r="6.2" fill="#fff"/>
+  <circle cx="43.4" cy="20.6" r="4" fill="#fff" stroke="#09090b" stroke-width="2"/>
+  </g>
 </svg>

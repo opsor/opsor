@@ -19,11 +19,11 @@ const W = 1280
 const H = 440
 
 const THEMES = {
-  opsor: { accent: '#4f9fd0', dark: '#0f2d45', light: '#8fc9ee', label: '#0b1f2a' },
+  opsor: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
   afk: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
-  pilot: { accent: '#e0a030', dark: '#3a2a0c', light: '#f2cf84', label: '#241a07' },
-  mas: { accent: '#8b7cf6', dark: '#221a4a', light: '#c3bbfb', label: '#150f33' },
-  bat: { accent: '#e05d6f', dark: '#3d1019', light: '#f4a3ad', label: '#240a10' },
+  pilot: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
+  mas: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
+  bat: { accent: '#d4d4d8', dark: '#18181b', light: '#fafafa', label: '#09090b' },
 }
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -153,7 +153,7 @@ function artBat(t) {
       return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a), size, fill, op }
     })
   const inner = ring(100, 6, -90, 11, t.accent, 1)
-  const outer = ring(165, 12, -75, 7, '#a24657', 1)
+  const outer = ring(165, 12, -75, 7, '#52525b', 1)
   const edges = inner.map((p) => `<line x1="${cx}" y1="${cy}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}" stroke="${t.accent}" stroke-opacity="0.45" stroke-width="1.5"/>`).join('')
   const edges2 = outer
     .map((p, i) => {
@@ -194,10 +194,9 @@ function artOpsor(t) {
       const r = (a * Math.PI) / 180
       const x = cx + R * Math.cos(r)
       const y = cy + R * Math.sin(r)
-      const file = f === 'afk' ? REPOS.opsor + '/assets/logo-afk.svg' : REPOS[f] + '/docs/brand/logo.svg'
+      const file = REPOS.opsor + '/assets/logo-' + f + '.svg'
       return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${t.accent}" stroke-opacity="0.18"/>
-      <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="41" fill="#000" stroke="#262626" stroke-width="2"/>
-      ${logoAt(file, x - 38, y - 38, 76)}
+      ${logoAt(file, x - 40, y - 40, 80)}
       <text x="${x.toFixed(1)}" y="${(y + (y > cy ? 62 : -50)).toFixed(1)}" text-anchor="middle" font-family="${MONO}" font-size="12" letter-spacing="1.4" fill="#6a6a6a">${n}</text>`
     })
     .join('')
@@ -270,14 +269,16 @@ const heroes = {
     tagline: ['A terminal for teams that', 'move on a schedule.'],
     sub: ['Watch drops, run executions to the millisecond,', 'keep a tamper-evident audit trail.'],
     pillItems: ['WINDOWS', 'ELECTRON 44', '184 TESTS'],
-    logo: logo('mas'),
+    logo: REPOS.mas + '/docs/brand/icon.svg',
+    noRing: true,
   }, artMas(THEMES.mas), 980),
   bat: heroFrame(THEMES.bat, {
     title: 'Bat',
     tagline: ['One brain.', 'A whole fleet of bots.'],
     sub: ['Fights, flies, spars and parades under', 'a single operator console.'],
     pillItems: ['NODE 20+', '30 BOTS / ENGINE', '11,800 CHECKS'],
-    logo: logo('bat'),
+    logo: REPOS.bat + '/docs/brand/icon.svg',
+    noRing: true,
   }, artBat(THEMES.bat), 1000),
   opsor: heroFrame(THEMES.opsor, {
     title: 'opsor',
@@ -285,6 +286,7 @@ const heroes = {
     sub: ['Quiet, precise automation.', 'Built to run, built to last.'],
     pillItems: ['OPEN FOR COMMISSIONS', '4 PRODUCTS SHIPPED'],
     logo: REPOS.opsor + '/assets/mark.svg',
+    noRing: true,
   }, artOpsor(THEMES.opsor), 986),
 }
 
@@ -300,6 +302,6 @@ for (const k of Object.keys(flows)) if (!only || only === k) out(k, 'flow', flow
 
 // Pilot keeps its own layered-grid banner as the hero
 if (!only || only === 'pilot') {
-  const b = fs.readFileSync(REPOS.pilot + '/docs/media/banner.svg', 'utf8')
+  const b = fs.readFileSync(REPOS.pilot + '/docs/media/banner.svg', 'utf8').replace(/#e0a030/gi, '#e4e4e7')
   out('pilot', 'hero', b)
 }

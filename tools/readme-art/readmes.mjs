@@ -12,11 +12,11 @@ const REPOS = {
 }
 
 const T = {
-  opsor: { c: '4f9fd0', dark: '0f2d45', light: '8fc9ee', label: '0b1f2a' },
-  afk: { c: 'd4d4d8', dark: '18181b', light: 'fafafa', label: '09090b' },
-  pilot: { c: 'e0a030', dark: '3a2a0c', light: 'f2cf84', label: '241a07' },
-  mas: { c: '8b7cf6', dark: '221a4a', light: 'c3bbfb', label: '150f33' },
-  bat: { c: 'e05d6f', dark: '3d1019', light: 'f4a3ad', label: '240a10' },
+  opsor: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  afk: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  pilot: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  mas: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
+  bat: { c: 'a1a1aa', dark: '18181b', light: 'fafafa', label: '09090b' },
 }
 
 const icon = (t, name, size = 28) => `<img src="https://api.iconify.design/ph/${name}-bold.svg?color=%23${t.c}" width="${size}" />`
